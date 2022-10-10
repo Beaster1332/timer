@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { TextField } from "@mui/material";
 
-const TimeTextField = ({type}) => {
-
-    const [value, setValue] = useState(0)
+const TimeTextField = ({label, value, setValue}) => {
 
     const handleChange = (e) => {
         setValue(e.target.value);
@@ -12,7 +10,7 @@ const TimeTextField = ({type}) => {
     return (
         <TextField
             id="outlined-number"
-            label={type}
+            label={label}
             type="number"
             InputLabelProps={{
                 shrink: true,

@@ -1,0 +1,17 @@
+.timerItemBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.timeBlock {
+    
+}
+
+.timeItem {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.buttonsBlock {
+    
+}
