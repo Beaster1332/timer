@@ -11,11 +11,11 @@ const TimerItem = ({ hours, minutes, seconds }) => {
     const startTimer = () => {
 
     }
-    
+
     const stopTimer = () => {
 
     }
-    
+
     const resetTimer = () => {
 
     }
@@ -29,9 +29,11 @@ const TimerItem = ({ hours, minutes, seconds }) => {
             <span className={classes.timeItem}>{getPadTime(seconds)}</span>
         </div>
         <div className={classes.buttonsBlock}>
-            <TimeButton onFunc={startTimer} job={'Start'}/>
-            <TimeButton onFunc={stopTimer} job={'Stop'}/>
-            <TimeButton onFunc={resetTimer} job={'Reset'}/>
+            <div className={classes.deepButtonsBlock}>
+                <TimeButton onFunc={startTimer} calling={'Start'} />
+                <TimeButton onFunc={stopTimer} calling={'Stop'} />
+                <TimeButton onFunc={resetTimer} calling={'Reset'} />
+            </div>
         </div>
     </div>
 }

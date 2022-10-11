@@ -1,17 +1,24 @@
 .timerItemBlock {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.timeBlock {
-    
+.timeBlock,
+.buttonsBlock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.deepButtonsBlock {
+    width: 275px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .timeItem {
     font-size: 28px;
     font-weight: 600;
-}
-
-.buttonsBlock {
-    
 }
